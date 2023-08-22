@@ -1,28 +1,23 @@
 .tool-list {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tool-list h3 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .tool-list ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .tool-list li {
-    margin-bottom: 10px;
-  }
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
 
-  .button-style {
-    background-color: #007bff; /* Couleur bleue */
-    color: white; /* Couleur du texte en blanc */
-    border: none; /* Pas de bordure */
-    padding: 10px 20px; /* Espacement intérieur du bouton */
-    border-radius: 5px; /* Coins arrondis */
-    cursor: pointer; /* Curseur de pointeur au survol */
-  }
+.tool-list h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.tool-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.tool-list li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
