@@ -1,0 +1,17 @@
+<div class="tool-list">
+    <button (click)="isToolListVisible = !isToolListVisible" class="button-style">Learn more about Vs Code and Git!</button>
+    <ul *ngIf="isToolListVisible" id="toolList">
+<li>
+    <strong>Visual Studio Code (VS Code)</strong>: A lightweight and customizable code editor that simplifies coding with its extensions and Git integration, along with debugging tools and a built-in terminal.
+</li>
+<li>
+    <strong>Git</strong>: A system that tracks and manages code changes, enabling teamwork, experimenting with new features using branches, and reverting to previous versions when needed.
+    <ul><li><strong>Branches</strong>: You can create branches to work on separate features or fixes without disrupting the main code.
+        </li>
+    <li><strong>Commits</strong>: Changes are grouped into "commits," which are records of the code's state at a specific moment.
+        </li><li><strong>Push & Pull</strong>: You can "push" your changes to a remote repository and "pull" changes from other team members.
+           </li><li> <strong>History</strong>: Git maintains a complete history of changes, allowing you to revert to previous versions when needed.</li></ul>
+</li>
+    </ul>
+        
+</div>

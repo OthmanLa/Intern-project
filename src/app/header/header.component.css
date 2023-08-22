@@ -1,0 +1,23 @@
+.full-width {
+    width: 100%;
+    background-color: #d3d3d373; /* Couleur de fond, remplacez par celle de votre choix */ 
+    text-align: center; /* Centrer le contenu horizontalement */
+    padding: 10px; /* Espacement interne pour un aspect agréable */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+  }
+
+  .logo {
+    float: left; /* Flotter à gauche pour aligner "Verosoft Design" à gauche */
+    margin: 0;
+    color: blue;
+    padding: 0;
+    display: inline-block; /* Ajouter un affichage en ligne pour ajuster la hauteur */
+    vertical-align: middle; /* Aligner verticalement avec "Welcome to..." */
+  }
+  
+  .welcome {
+    display: inline-block; /* Ajouter un affichage en ligne pour ajuster la hauteur */
+    vertical-align: middle; /* Aligner verticalement avec le logo */
+    margin-right: 220px;
+    color: blue; /* Espacement entre le logo et le texte "Welcome to..." */
+  }
