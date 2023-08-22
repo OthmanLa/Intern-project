@@ -1,11 +1,15 @@
-<app-header></app-header>
-<app-tools></app-tools>
-<br>
-<br>
-<app-vsgit></app-vsgit>
-<br>
-<br>
-<app-azur></app-azur>
-<br>
-<br>
-<app-communication></app-communication>
+<div class="container">
+    <app-header></app-header>
+    <div class="components">
+        <button (click)="toggleComponent('tools')">Learn more about Useful Tools</button>
+        <button (click)="toggleComponent('vsgit')">Learn more about VScode and Git</button>
+        <button (click)="toggleComponent('azur')">Learn more about Azur DevOps</button>
+        <button (click)="toggleComponent('communication')">Learn more about Communication</button>
+      </div>
+      <div class="content">
+        <app-tools *ngIf="activeComponent === 'tools'"></app-tools>
+        <app-vsgit *ngIf="activeComponent === 'vsgit'"></app-vsgit>
+        <app-azur *ngIf="activeComponent === 'azur'"></app-azur>
+        <app-communication *ngIf="activeComponent === 'communication'"></app-communication>
+      </div>
+    </div>

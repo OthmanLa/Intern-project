@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./vsgit.component.css']
 })
 export class VsgitComponent {
-  isToolListVisible: boolean = false;
 }

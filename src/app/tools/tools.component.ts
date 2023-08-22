@@ -6,7 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./tools.component.css']
 })
 export class ToolsComponent {
-
-
-  isToolListVisible: boolean = false;
 }
