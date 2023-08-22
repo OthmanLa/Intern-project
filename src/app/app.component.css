@@ -6,5 +6,15 @@
   
   .components {
     display: flex;
-    gap: 20px; /* Adjust as needed */
+    gap: 50px; /* Adjust as needed */
+    margin-top: 20px;
+  }
+
+  .button-style {
+    background-color: #007bff; /* Couleur bleue */
+    color: white; /* Couleur du texte en blanc */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur au survol */
   }

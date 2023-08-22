@@ -1,10 +1,10 @@
 <div class="container">
     <app-header></app-header>
     <div class="components">
-        <button (click)="toggleComponent('tools')">Learn more about Useful Tools</button>
-        <button (click)="toggleComponent('vsgit')">Learn more about VScode and Git</button>
-        <button (click)="toggleComponent('azur')">Learn more about Azur DevOps</button>
-        <button (click)="toggleComponent('communication')">Learn more about Communication</button>
+        <button (click)="toggleComponent('tools')" class="button-style">Learn more about Useful Tools</button>
+        <button (click)="toggleComponent('vsgit')" class="button-style">Learn more about VScode and Git</button>
+        <button (click)="toggleComponent('azur')" class="button-style">Learn more about Azur DevOps</button>
+        <button (click)="toggleComponent('communication')" class="button-style">Learn more about Communication</button>
       </div>
       <div class="content">
         <app-tools *ngIf="activeComponent === 'tools'"></app-tools>
