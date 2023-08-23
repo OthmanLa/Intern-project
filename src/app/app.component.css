@@ -1,26 +1,28 @@
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .components {
-    display: flex;
-    gap: 20px; /* Réduit l'espacement entre les composants */
-    margin-top: 20px;
-  }
-  
-  .button-style {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Ajoute une transition fluide */
-  }
-  
-  .button-style:hover {
-    background-color: #2980b9; /* Légère modification de la couleur au survol */
-    transform: scale(1.15); /* Légère animation d'agrandissement au survol */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.components {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button-style {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-style:hover {
+  background-color: #2980b9;
+  transform: scale(1.15); /* Légèrement réduit l'agrandissement au survol */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre au survol */
+}
