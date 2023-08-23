@@ -23,6 +23,6 @@
 
 .button-style:hover {
   background-color: #2980b9;
-  transform: scale(1.15); /* Légèrement réduit l'agrandissement au survol */
+  transform: scale(1.1); /* Légèrement réduit l'agrandissement au survol */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre au survol */
 }
