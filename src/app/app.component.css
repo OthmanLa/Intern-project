@@ -6,15 +6,21 @@
   
   .components {
     display: flex;
-    gap: 50px; /* Adjust as needed */
+    gap: 20px; /* Réduit l'espacement entre les composants */
     margin-top: 20px;
   }
-
+  
   .button-style {
-    background-color: #3498db; /* Couleur bleue */
-    color: white; /* Couleur du texte en blanc */
-    border: none; /* Pas de bordure */
-    padding: 10px 20px; /* Espacement intérieur du bouton */
-    border-radius: 5px; /* Coins arrondis */
-    cursor: pointer; /* Curseur de pointeur au survol */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Ajoute une transition fluide */
+  }
+  
+  .button-style:hover {
+    background-color: #2980b9; /* Légère modification de la couleur au survol */
+    transform: scale(1.15); /* Légère animation d'agrandissement au survol */
   }
