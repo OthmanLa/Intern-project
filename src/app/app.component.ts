@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { ComponentTextService } from './component-text.service';
 
 @Component({
   selector: 'app-root',
@@ -7,22 +7,21 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  activeComponent: string = '';
-  defaultText: string = 'Select a button to learn more.';
-  activeComponentSubject: BehaviorSubject<string> = new BehaviorSubject<string>(this.defaultText);
+  activeComponent: string = '';// Variable qui stocke le nom du composant actif.
+
+  constructor(public componentTextService: ComponentTextService) {}//Injecte le service ComponentTextService dans le composant afin qu'il soit accessible dans les méthodes du composant.
 
   ngOnInit() {
-    this.activeComponentSubject.next(this.defaultText);
+    this.componentTextService.clearActiveComponent();// Méthode du cycle de vie OnInit qui est appelée lorsque le composant est initialisé
   }
 
   toggleComponent(component: string) {
     if (this.activeComponent === component) {
       this.activeComponent = '';
-      this.activeComponentSubject.next(this.defaultText);
+      this.componentTextService.clearActiveComponent();
     } else {
       this.activeComponent = component;
-      this.activeComponentSubject.next(component);
+      this.componentTextService.setActiveComponent(component);
     }
   }
 }
-
