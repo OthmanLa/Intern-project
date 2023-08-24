@@ -1,14 +1,14 @@
 <div class="container">
     <app-header></app-header>
     <div class="components">
-      <button (click)="toggleComponent('tools')" class="button-style">Learn more about Useful Tools</button>
-      <button (click)="toggleComponent('vsgit')" class="button-style">Learn more about VScode and Git</button>
-      <button (click)="toggleComponent('azur')" class="button-style">Learn more about Azur DevOps</button>
-      <button (click)="toggleComponent('communication')" class="button-style">Learn more about Communication</button>
+      <button (appReplaceClick)="toggleComponent('tools')" class="button-style">Learn more about Useful Tools</button>
+      <button (appReplaceClick)="toggleComponent('vsgit')" class="button-style">Learn more about VScode and Git</button>
+      <button (appReplaceClick)="toggleComponent('azur')" class="button-style">Learn more about Azur DevOps</button>
+      <button (appReplaceClick)="toggleComponent('communication')" class="button-style">Learn more about Communication</button>
     </div>
     <div class="content">
-        <p *ngIf="!activeComponent" class="default-text">Select a component to learn more.</p> 
-        <ng-container *ngIf="activeComponent === 'tools'">
+        <p  *ngIf="!activeComponent" class="default-text">{{ componentTextService.getActiveComponentText() | async }}</p><!-- Si activeComponent a une valeur, l'élément HTML sera exclu du DOM.     -->
+           <ng-container *ngIf="activeComponent === 'tools'">
         <app-tools></app-tools>
       </ng-container>
       <ng-container *ngIf="activeComponent === 'vsgit'">
