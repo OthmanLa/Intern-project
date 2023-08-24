@@ -1,15 +1,29 @@
 <div class="container">
     <app-header></app-header>
     <div class="components">
-        <button (click)="toggleComponent('tools')" class="button-style">Learn more about Useful Tools</button>
-        <button (click)="toggleComponent('vsgit')" class="button-style">Learn more about VScode and Git</button>
-        <button (click)="toggleComponent('azur')" class="button-style">Learn more about Azur DevOps</button>
-        <button (click)="toggleComponent('communication')" class="button-style">Learn more about Communication</button>
-      </div>
-      <div class="content">
-        <app-tools *ngIf="activeComponent === 'tools'"></app-tools>
-        <app-vsgit *ngIf="activeComponent === 'vsgit'"></app-vsgit>
-        <app-azur *ngIf="activeComponent === 'azur'"></app-azur>
-        <app-communication *ngIf="activeComponent === 'communication'"></app-communication>
-      </div>
+      <button (click)="toggleComponent('tools')" class="button-style">Learn more about Useful Tools</button>
+      <button (click)="toggleComponent('vsgit')" class="button-style">Learn more about VScode and Git</button>
+      <button (click)="toggleComponent('azur')" class="button-style">Learn more about Azur DevOps</button>
+      <button (click)="toggleComponent('communication')" class="button-style">Learn more about Communication</button>
     </div>
+    <div class="content">
+        <p *ngIf="!activeComponent" class="default-text">Select a component to learn more.</p> 
+        <ng-container *ngIf="activeComponent === 'tools'">
+        <app-tools></app-tools>
+      </ng-container>
+      <ng-container *ngIf="activeComponent === 'vsgit'">
+        <app-vsgit></app-vsgit>
+      </ng-container>
+      <ng-container *ngIf="activeComponent === 'azur'">
+        <app-azur></app-azur>
+      </ng-container>
+      <ng-container *ngIf="activeComponent === 'communication'">
+        <app-communication></app-communication>
+      </ng-container>
+    </div>
+  </div>  
+  
+  
+  
+  
+  
