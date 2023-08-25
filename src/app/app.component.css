@@ -31,16 +31,21 @@
     color: white; /* Couleur du texte en blanc */
     background-color:  #3498db; /* Couleur bleue pour la bordure intérieure */
     font-style: normal;
-    font-size: 30px;
+    font-size: 28px; /* Taille de police ajustée */
     margin: 80px auto;
     text-align: center;
-    line-height: 1.5;
-    padding: 15px;
+    line-height: 1.6; /* Légère augmentation de l'espacement entre les lignes */
+    padding: 20px; /* Espacement intérieur plus grand */
     border: 2px solid  #3498db; /* Bordure de 2px solide avec la couleur bleue */
-    border-radius: 100px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-  }
+    border-radius: 50px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère augmentation de l'ombre */
+    max-width: 100%; /* Largeur maximale ajustée */
+    transition: background-color 0.3s; /* Ajout d'une transition pour la couleur de fond */
+}
+
+.default-text:hover {
+    background-color: #2980b9; /* Légère modification de la couleur au survol */
+}
   
   
   
