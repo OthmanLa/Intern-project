@@ -43,9 +43,7 @@
     transition: background-color 0.3s; /* Ajout d'une transition pour la couleur de fond */
 }
 
-.default-text:hover {
-    background-color: #2980b9; /* Légère modification de la couleur au survol */
-}
+
   
   
   
